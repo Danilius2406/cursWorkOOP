@@ -1,34 +1,34 @@
+using System.Threading;
 namespace WinForm;
 
 class Simulation
 {
-    private readonly IStatistics _statistics;
     public static event Action Update;
     public delegate void AnimalsMove(List<GameObject>[,] map);
     public static event AnimalsMove Move;
-    private readonly int _delay;
+    private int _delay;
     public static int MaxTurns { get; private set; }
     private readonly List<GameObject>[,] _map;
-    
+    private int _turnsCount;
+
+
     public Simulation(List<GameObject>[,] map)
     {
-        _delay = 20;
-        MaxTurns = 200;
-        _statistics = new Statistics(map);
+        _delay = 100;
+        MaxTurns = 10;
         _map = map;
+        _turnsCount = 0;      
     }
 
-    public void Start()
+    public void Start(Form1 form)
     {
-        while (_statistics.TurnsCount < MaxTurns)
+        while (_turnsCount < MaxTurns)
         {
             Update.Invoke();
             Move.Invoke(_map);
             Thread.Sleep(_delay);
-            
-            Console.Clear();
-            _statistics.RecordStatistics();
-            _statistics.Print();
+            form.Visualization();
+            _turnsCount++;
         }
     }
 

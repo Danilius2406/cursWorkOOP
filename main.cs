@@ -5,13 +5,9 @@ namespace WinForm
         [STAThread]
         static void Main()
         {
-            
-           
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
-           // GameModel gameModel = new GameModel();
-            //Simulation simulation = new Simulation(gameModel.map);
-            simulation.Start();
+            var form = new Form1();
+            Application.Run(form);
         }
     }
 }

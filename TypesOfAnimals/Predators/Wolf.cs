@@ -10,7 +10,7 @@ namespace WinForm
     {
         public Wolf()
         {
-            MaxSatiety = 24;
+            MaxSatiety = 72;
             MaxSpeed = 3;
             RadiusOfView = 4;
             YoungAge = 19;

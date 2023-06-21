@@ -11,7 +11,7 @@ namespace WinForm
         
         public Bear()
         {
-            MaxSatiety = 40;
+            MaxSatiety = 100;
             MaxSpeed = 2;
             RadiusOfView = 3;
             YoungAge = 20;

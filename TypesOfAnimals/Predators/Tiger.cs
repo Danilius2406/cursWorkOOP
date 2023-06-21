@@ -10,7 +10,7 @@ namespace WinForm
     {
         public Tiger()
         {
-            MaxSatiety = 30;
+            MaxSatiety = 55;
             MaxSpeed = 3;
             RadiusOfView = 4;
             YoungAge = 23;

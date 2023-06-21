@@ -10,7 +10,7 @@ namespace WinForm
     {
         public Hyena()
         {
-            MaxSatiety = 20;
+            MaxSatiety = 50;
             MaxSpeed = 3;
             RadiusOfView = 4;
             YoungAge = 18;

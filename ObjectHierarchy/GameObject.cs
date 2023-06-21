@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinForm
 {
-    abstract class GameObject
+    public abstract class GameObject
     {
         public int Saturability { get; set; }
         public Point Coordinate {get; set;}
