@@ -69,27 +69,18 @@ namespace WinForm
                     if (obj is Predators)
                     {                      
                         textBox.BackColor = Color.Red;
-                        textBox.Clear();
                         continue;
                     }
                     else if (obj is Preys)
                     {                       
                         textBox.BackColor = Color.Blue;
-                        textBox.Clear();
                         continue;
                     }
                     else if (obj is Grass)
                     {                
                         textBox.BackColor = Color.Green;
-                        textBox.Clear();
                         continue;
                     }
-                    else
-                    {                     
-                        textBox.BackColor = Color.White;
-                        textBox.Clear();
-                    }
-
                 }
             }
 

@@ -15,21 +15,29 @@ class Simulation
     public Simulation(List<GameObject>[,] map)
     {
         _delay = 100;
-        MaxTurns = 10;
+        MaxTurns = 100;
         _map = map;
         _turnsCount = 0;      
     }
 
     public void Start(Form1 form)
     {
-        while (_turnsCount < MaxTurns)
+        try
         {
-            Update.Invoke();
-            Move.Invoke(_map);
-            Thread.Sleep(_delay);
-            form.Visualization();
-            _turnsCount++;
+            while (_turnsCount < MaxTurns)
+            {
+                Update.Invoke();
+                Move.Invoke(_map);
+                Thread.Sleep(_delay);
+                form.Visualization();
+                _turnsCount++;
+            }
         }
+        catch (Exception)
+        {
+            
+        }
+        
     }
 
 }

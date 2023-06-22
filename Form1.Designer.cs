@@ -75,9 +75,9 @@
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(1, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 18);
+            this.label2.Size = new System.Drawing.Size(258, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Print number of animals:";
+            this.label2.Text = "Print start number of animals:";
             // 
             // label3
             // 
@@ -204,9 +204,9 @@
             this.button2.Font = new System.Drawing.Font("Snap ITC", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(516, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 31);
+            this.button2.Size = new System.Drawing.Size(218, 31);
             this.button2.TabIndex = 18;
-            this.button2.Text = "Start simulation";
+            this.button2.Text = "Next step";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
